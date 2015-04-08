@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jquery.signal-indicator.js demo</title>
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../jquery.signal-indicator.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('div.si-indicator').signalIndicator({
+			barWidth: 10
+		});
+	});
+	</script>
+	<style>
+	div.si-indicator {
+		width: 50px;
+		height: 30px;
+	}
+	div.si-indicator .bar {
+		display: inline-block;
+		vertical-align: bottom;
+	}
+	div.si-indicator .bar-on {
+		background: rgba(164,179,87,1);
+		background: -moz-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+		background: -webkit-gradient(left top, right top, color-stop(0%, rgba(164,179,87,1)), color-stop(100%, rgba(117,137,12,1)));
+		background: -webkit-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+		background: -o-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+		background: -ms-linear-gradient(left, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+		background: linear-gradient(to right, rgba(164,179,87,1) 0%, rgba(117,137,12,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a4b357', endColorstr='#75890c', GradientType=1 );
+	}
+	div.si-indicator .bar-off {
+
+	}
+	</style>
+
+</head>
+<body>
+
+<div class="si-indicator">
+
+</div>
+
+</body>
+</html>
